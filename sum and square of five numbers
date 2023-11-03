@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+   int a,sum=0,square;
+   for(a=1;a<=5;a++)
+{
+   printf("%d\n",a);
+   printf("%d\n",a*a);
+   sum+=a;
+   square+=a*a;
+}
+printf("sum of first five numbers :%d\n",sum);
+printf("square of first five numbers :%d\n",square);
+return0;
+}
