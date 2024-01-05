@@ -1,0 +1,25 @@
+/*#include<stdio.h>
+void main ()
+{
+    int j,x,a;
+    scanf("%d",&x);
+    for(a=1;a<=x;a++)
+    {    
+    for( j=1;j<=a;j++)
+     {
+     printf("*");}
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int n,i=1;
+    scanf("%d",&n);
+while(i<=n)
+{
+    printf(" i am learning c programming ");
+    i++;
+
+}
+}*/
