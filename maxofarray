@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int array[6]= {15,17,42,55,68,38},index=0;
+    int max=array[0];
+    for (int i=1;i<6;i++)
+    if (array [i]> max)
+    {
+        max =array[i];
+       index=i;
+    }
+    printf(" the max number is :%d\n", max);
+    printf(" index value of the max %d\n",index);
+    return 0;
+}
+/*#include<stdio.h>
+int main(){
+    int array[6]= {25,17,12,55,68,38},index=0;
+    int min=array[0];
+    for (int i=1;i<6;i++)
+    if (array [i]<min )
+    {
+        min =array[i];
+       index=i;
+    }
+    printf(" the min number is :%d\n", min);
+    printf(" index value of the min %d\n",index);
+    return 0;
+}*/
