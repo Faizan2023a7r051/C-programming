@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n; // Number of elements in the array
+    int *arr; // Pointer to the dynamically allocated array
+
+    // Read the number of elements from the user
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    // Allocate memory for the array dynamically
+    arr = (int *)malloc(n * sizeof(int));
+
+    // Check if memory allocation is successful
+    if (arr == NULL) {
+        printf("Memory allocation failed. Exiting...\n");
+        return 1; // Return with an error code
+    }
+
+    // Read elements into the dynamically allocated array
+    printf("Enter %d elements:\n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Display the elements of the dynamically allocated array
+    printf("Elements in the dynamically allocated array:\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // Free the dynamically allocated memory
+    free(arr);
+
+    return 0;
+}
